@@ -1,11 +1,16 @@
+import jdk.jfr.Frequency;
+
 public class permutationsFrequency {
 
 
     public static void main(String args[]) {
         String oneStr = "hdgf";
         String twoStr = "fghd";
+        boolean isPerm = frequency(oneStr, twoStr);
+        System.out.println(isPerm);
     }
 
+    /* Frequency -> add and subract letters found*/
     public boolean frequecy(String one, String two){
         // check sizes first
         if (one.length() != two.length()) {
@@ -26,3 +31,4 @@ public class permutationsFrequency {
         return true;
     }
 }
+
